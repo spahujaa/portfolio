@@ -34,7 +34,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 @keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes pulse2{0%,100%{box-shadow:0 0 0 4px rgba(76,175,80,0.18)}50%{box-shadow:0 0 0 8px rgba(76,175,80,0.06)}}
+50%{box-shadow:0 0 0 8px rgba(76,175,80,0.06)}}
 
 /* CONTACT HERO */
 .contact-hero{display:grid;grid-template-columns:1fr 1fr;min-height:56vh;background:var(--surface);border-bottom:1px solid var(--border);padding-top:60px}
@@ -57,13 +57,13 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 .c-quick-link:hover .c-ql-arrow{transform:translateX(4px) translateY(-4px);color:var(--text)}
 
 /* AVAILABILITY */
-.avail-section{background:var(--surface);border-bottom:1px solid var(--border);display:grid;grid-template-columns:280px 1fr}
-.avail-label{padding:48px 48px;border-right:1px solid var(--border)}
-.avail-body{padding:48px 64px;display:flex;align-items:center;justify-content:space-between;gap:32px}
+
+
+
 .avail-status{display:flex;align-items:center;gap:12px}
-.avail-dot{width:10px;height:10px;border-radius:50%;background:#4CAF50;box-shadow:0 0 0 4px rgba(76,175,80,0.18);animation:pulse2 2s ease infinite;flex-shrink:0}
-.avail-text{font-size:16px;font-weight:500}
-.avail-sub{font-size:13px;color:var(--text2);margin-top:2px}
+
+
+
 
 /* INFO CARDS */
 .info-section{display:grid;grid-template-columns:repeat(4,1fr);background:var(--bg);border-bottom:1px solid var(--border);border-left:1px solid var(--border)}
@@ -75,10 +75,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 
 @media(max-width:1024px){
   .contact-hero{grid-template-columns:1fr;min-height:auto}.contact-hero-left{padding:72px 32px 48px;border-right:none;border-bottom:1px solid var(--border)}.contact-hero-right{padding:40px 32px}
-  .avail-section{grid-template-columns:1fr}.avail-label{padding:32px 32px 0;border-right:none}.avail-body{padding:24px 32px 32px;flex-direction:column;align-items:flex-start}
+  
   .info-section{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:640px){.nav{padding:0 24px}.nav-links{display:none}.info-section{grid-template-columns:1fr 1fr}.cursor-dot,.cursor-ring{display:none}.site-footer{padding:16px 24px;flex-direction:column;gap:12px;text-align:center}.avail-body{flex-direction:column;align-items:flex-start;gap:20px}}
+@media(max-width:640px){.nav{padding:0 24px}.nav-links{display:none}.info-section{grid-template-columns:1fr 1fr}.cursor-dot,.cursor-ring{display:none}.site-footer{padding:16px 24px;flex-direction:column;gap:12px;text-align:center}}
 
 /* ── HAMBURGER MENU ── */
 .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;cursor:pointer;background:none;border:none;padding:4px;border-radius:6px;transition:background .15s}
@@ -94,30 +94,56 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 .mobile-menu a:hover,.mobile-menu a.active{color:var(--text);background:var(--surface2)}
 @keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:768px){.hamburger{display:flex}}
+
+/* HAMBURGER */
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;cursor:pointer;background:none;border:none;padding:4px;border-radius:6px;transition:background .15s;flex-shrink:0}
+.hamburger:hover{background:var(--surface2)}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .2s}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;z-index:99;background:var(--surface);border-bottom:1px solid var(--border);flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,0.08)}
+.mobile-menu.open{display:flex;animation:slideDown .2s ease}
+.mobile-menu a{font-family:var(--sans);font-size:14px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text2);text-decoration:none;padding:16px 24px;border-bottom:1px solid var(--border);transition:background .15s,color .15s}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:var(--text);background:var(--surface2)}
+.mobile-menu a.active{color:var(--text);font-weight:500}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.nav-cta{display:none}}
+
+.avail-banner{display:flex;align-items:center;gap:10px;padding:12px 48px;background:var(--surface);border-bottom:1px solid var(--border);font-size:13px;color:var(--text2)}
+.avail-dot-sm{width:8px;height:8px;border-radius:50%;background:#4CAF50;box-shadow:0 0 0 3px rgba(76,175,80,0.2);flex-shrink:0;animation:pulseGreen 2s ease infinite}
+@keyframes pulseGreen{0%,100%{box-shadow:0 0 0 3px rgba(76,175,80,0.2)}50%{box-shadow:0 0 0 6px rgba(76,175,80,0.06)}}
+@media(max-width:768px){.avail-banner{padding:12px 24px;font-size:12px}}
 </style>
 </head>
 <body>
 <div class="cursor-dot" id="cDot"></div>
 <div class="cursor-ring" id="cRing"></div>
 <nav class="nav">
-  <a href="index.html" class="nav-logo" onclick="if(window.location.pathname.includes('index')||window.location.pathname==='/'||window.location.pathname.endsWith('/')){event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})}">Sehej <em>Pahujaa</em></a>
+  <a href="index.html" class="nav-logo" onclick="if(location.pathname.replace(/.*\//, '').match(/^(index\.html)?$/)){event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})}">Sehej <em>Pahujaa</em></a>
   <ul class="nav-links">
     <li><a href="index.html">Work</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
-  <a href="mailto:work.sehejpahujaa@gmail.com" class="nav-cta">work.sehejpahujaa@gmail.com</a>
-
-  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" role="navigation">
   <a href="index.html">Work</a>
   <a href="about.html">About</a>
   <a href="contact.html" class="active">Contact</a>
 </div>
 <div class="page-wrap">
+
+<!-- AVAILABILITY BANNER -->
+<div class="avail-banner">
+  <div class="avail-dot-sm"></div>
+  <span>Available for new opportunities — full-time roles, freelance &amp; collaborations in Bangalore &amp; Mumbai</span>
+</div>
 
 <!-- HERO -->
 <section class="contact-hero">
@@ -165,23 +191,6 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
   </div>
 </section>
 
-<!-- AVAILABILITY -->
-<div class="avail-section">
-  <div class="avail-label"><span class="section-label">Status</span></div>
-  <div class="avail-body">
-    <div class="avail-status">
-      <div class="avail-dot"></div>
-      <div>
-        <div class="avail-text">Available for new opportunities</div>
-        <div class="avail-sub">Open to full-time roles, freelance projects, and design collaborations — Bangalore, Mumbai, or remote.</div>
-      </div>
-    </div>
-    <a href="mailto:work.sehejpahujaa@gmail.com" class="btn btn-outline" style="flex-shrink:0;">
-      Email me directly <span class="btn-arrow">→</span>
-    </a>
-  </div>
-</div>
-
 <!-- INFO CARDS -->
 <div class="info-section">
   <div class="info-card">
@@ -220,6 +229,18 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 <script>
 (function(){const d=document.getElementById('cDot'),r=document.getElementById('cRing');if(!d||!r)return;let mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;d.style.transform=`translate(${mx-3}px,${my-3}px)`;r.style.transform=`translate(${rx-16}px,${ry-16}px)`;requestAnimationFrame(loop)})();document.querySelectorAll('a,button,.info-card').forEach(el=>{el.addEventListener('mouseenter',()=>{r.style.width='52px';r.style.height='52px';r.style.borderColor='rgba(26,25,22,0.45)'});el.addEventListener('mouseleave',()=>{r.style.width='32px';r.style.height='32px';r.style.borderColor='rgba(26,25,22,0.28)'})})})();
 (function(){const w=document.querySelector('.page-wrap');if(!w)return;document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(!h||h.startsWith('http')||h.startsWith('mailto')||h.startsWith('#')||a.hasAttribute('download'))return;a.addEventListener('click',e=>{e.preventDefault();w.style.transition='opacity .25s ease,transform .25s ease';w.style.opacity='0';w.style.transform='translateY(-6px)';setTimeout(()=>window.location.href=h,260)})})})();
+
+(function(){
+  var btn=document.getElementById('hamburgerBtn');
+  var menu=document.getElementById('mobileMenu');
+  if(!btn||!menu)return;
+  function close(){menu.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();var o=menu.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',String(o));});
+  document.addEventListener('click',function(e){if(!menu.contains(e.target)&&e.target!==btn)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+})();
+
 </script>
 </body>
 </html>
