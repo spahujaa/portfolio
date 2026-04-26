@@ -166,7 +166,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
 @keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.nav-cta{display:none}}
 
-.nav-links .spurr-link{background:var(--text);color:var(--surface);padding:5px 12px;border-radius:100px;font-weight:700}
+.nav-links .spurr-link{color:var(--text,#1A1916);background:none;padding:0;border-radius:0;font-weight:500}
 .nav-links .spurr-link:hover{background:#FF3F80;border-color:#FF3F80}
 .mobile-menu .spurr-mobile{background:var(--text);color:var(--surface);font-weight:700}
 .mobile-menu .spurr-mobile:hover{background:#FF3F80;color:#fff}
@@ -201,7 +201,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
   <div class="about-hero-left">
     <p class="about-eyebrow">About me</p>
     <h1 class="about-heading">A designer who<br>listens <em>before</em><br>she designs.</h1>
-    <p class="about-lead">I'm Sehej — a UX Consultant with 5+ years of experience crafting thoughtful digital experiences across fintech, automotive, healthcare, telecom, and social impact.</p>
+    <p class="about-lead">I'm Sehej — a UX Consultant with 5+ years leading enterprise design at Deloitte across healthcare AI, fintech, and automotive. I've led $6.7M+ client pursuits and shipped tools used by global teams.</p>
   </div>
   <div class="about-hero-right">
     <div class="about-availability">
@@ -229,7 +229,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
   <div class="bio-label"><span class="section-label">Story</span></div>
   <div class="bio-body">
     <p class="bio-para">
-      I'm a <strong>UX Consultant at Deloitte US Offices of India</strong>, previously at Lollypop Design Studios, YUJ Designs, and VMLY&amp;R. My career has spanned fintech, automotive, healthcare, telecom, and social impact — always grounded in empathy and research.
+      I'm a <strong>UX Consultant at Deloitte US Offices of India</strong> — currently leading enterprise-scale AI tools and $6.7M+ client pursuits. With 5+ years spanning healthcare, fintech, and automotive, I work best at the intersection of ambiguous business problems and complex user needs, translating stakeholder expectations into experiences that drive measurable outcomes.<br><br>
+      When I'm not pushing pixels, I'm chasing light with a camera — hunting for the perfect iced latte in cities I probably booked a flight to on a whim.
     </p>
     <blockquote class="bio-quote">"If one stays true to the process, the result always follows."</blockquote>
     <p class="bio-para">
@@ -295,223 +296,47 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15
   <div class="skills-label"><span class="section-label">Skills</span></div>
   <div class="skills-body">
     <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">◎</div>
-        <div class="skill-name">Design Research</div>
-        <div class="skill-tags">
-          <span class="tag-sm">Interviews</span>
-          <span class="tag-sm">Surveys</span>
-          <span class="tag-sm">Contextual Inquiry</span>
-          <span class="tag-sm">Usability Testing</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">⬡</div>
-        <div class="skill-name">Experience Mapping</div>
-        <div class="skill-tags">
-          <span class="tag-sm">Journey Mapping</span>
-          <span class="tag-sm">Service Design</span>
-          <span class="tag-sm">Stakeholder Mgmt</span>
-          <span class="tag-sm">Flow Design</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">▦</div>
-        <div class="skill-name">Wireframing &amp; Prototyping</div>
-        <div class="skill-tags">
-          <span class="tag-sm">Lo-fi Wireframes</span>
-          <span class="tag-sm">Hi-fi Prototypes</span>
-          <span class="tag-sm">Interaction Design</span>
-          <span class="tag-sm">Microinteractions</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">✦</div>
-        <div class="skill-name">Tools</div>
-        <div class="skill-tags">
-          <span class="tag-sm">Figma</span>
-          <span class="tag-sm">Figjam</span>
-          <span class="tag-sm">Miro</span>
-          <span class="tag-sm">Claude</span>
-          <span class="tag-sm">Adobe Suite</span>
-          <span class="tag-sm">Basic HTML/CSS/JS</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="exp-section">
-  <div class="exp-label"><span class="section-label">Experience</span></div>
-  <div class="exp-body">
-    <div class="exp-timeline">
-
-      <div class="exp-entry">
-        <div class="exp-period">2024 — Present</div>
-        <div class="exp-details">
-          <div class="exp-title">UX Consultant</div>
-          <div class="exp-company">Deloitte US Offices of India</div>
-          <ul class="exp-bullets">
-            <li>Led and won the pitch worth $6.7M for a Swiss multinational healthcare company on an AI Medical Writing Assistant; accelerated drafting productivity by 20–30%.</li>
-            <li>Facilitated alignment among development, design, and client teams for an R&amp;D-driven Japanese biopharmaceutical leader, prioritising fixes to maintain schedule integrity.</li>
-            <li>As sole designer on an American MNC biotechnology pursuit, delivered a multi-persona baseline prototype within 2–3 weeks — contributing to the $1.6M pursuit.</li>
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Healthcare UX</span><span class="tag-sm">Enterprise</span><span class="tag-sm">Pharma</span><span class="tag-sm">Stakeholder Mgmt</span>
+          <div class="skill-card">
+            <div class="skill-cat">Research &amp; Strategy</div>
+            <div class="skill-tags">
+              <span class="tag-sm">User Interviews</span>
+              <span class="tag-sm">Contextual Inquiry</span>
+              <span class="tag-sm">Journey Mapping</span>
+              <span class="tag-sm">Experience Mapping</span>
+              <span class="tag-sm">Competitive Analysis</span>
+              <span class="tag-sm">Synthesis &amp; Insight</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-cat">Design &amp; Delivery</div>
+            <div class="skill-tags">
+              <span class="tag-sm">Wireframing</span>
+              <span class="tag-sm">Prototyping</span>
+              <span class="tag-sm">Design Systems</span>
+              <span class="tag-sm">Stakeholder Management</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-cat">Software</div>
+            <div class="skill-tags">
+              <span class="tag-sm">Figma</span>
+              <span class="tag-sm">Figjam</span>
+              <span class="tag-sm">Miro</span>
+              <span class="tag-sm">Adobe Creative Suite</span>
+              <span class="tag-sm">HTML/CSS/JS (basic)</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-cat">AI Tools</div>
+            <div class="skill-tags">
+              <span class="tag-sm">Claude</span>
+              <span class="tag-sm">Midjourney</span>
+              <span class="tag-sm">Vibe Coding</span>
+              <span class="tag-sm">AI-assisted Design</span>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="exp-entry">
-        <div class="exp-period">2023 — 2024 (6 months)</div>
-        <div class="exp-details">
-          <div class="exp-title">Associate Senior UX Designer</div>
-          <div class="exp-company">Lollypop Design Studios</div>
-          <ul class="exp-bullets">
-            <li>Led and designed the website for Reveal Health-tech — a care-centric health-tech solution — in a span of 2.5 weeks.</li>
-            <li>Redesigned the entire admissions process end-to-end for a leading international school brand across the world.</li>
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Health-tech</span><span class="tag-sm">EdTech</span><span class="tag-sm">Website Design</span>
+      </section>            </div>
           </div>
         </div>
-      </div>
-
-      <div class="exp-entry">
-        <div class="exp-period">2021 — 2023 (2+ years)</div>
-        <div class="exp-details">
-          <div class="exp-title">UX Designer</div>
-          <div class="exp-company">YUJ Designs · Pune, India</div>
-          <ul class="exp-bullets">
-            <li>FORD: Strategised and created a futuristic app enabling ride-share for upcoming EV vehicles.</li>
-            <li>TATA Motors Financing Platform: Worked closely with business head to shift the current offline model of vehicle financing into an online portal.</li>
-            <li>ZS Associates: Worked as a contractor and solved periodic concerns in the reporting vertical.</li>
-            <li>Adani Soul, ZS Healthcare, IDFC First: Won 2 out of 3 client pitches by researching and designing Proof of Concepts.</li>
-  
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Fintech</span><span class="tag-sm">Automotive</span><span class="tag-sm">Banking</span><span class="tag-sm">Education</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-entry">
-        <div class="exp-period">2020 (6 months)</div>
-        <div class="exp-details">
-          <div class="exp-title">UX Intern</div>
-          <div class="exp-company">VMLY&amp;R (a WPP Subsidiary) · Mumbai, India</div>
-          <ul class="exp-bullets">
-            <li>IDFC First Bank: Re-imagined a new age banking system keeping in mind stakeholder expectations and client feedback.</li>
-            <li>IIT Bombay: Ideated and solely executed a game-based learning platform (WPP × IIT Bombay) to enhance English speaking skills for underprivileged children.</li>
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Banking</span><span class="tag-sm">Agency</span><span class="tag-sm">EdTech</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-entry">
-        <div class="exp-period">2019 (1 month)</div>
-        <div class="exp-details">
-          <div class="exp-title">Project Intern</div>
-          <div class="exp-company">Mumbai Mobile Creches · NGO · Mumbai, India</div>
-          <ul class="exp-bullets">
-            <li>Directed and produced a promotional video showcasing puppetry to advertise the skillsets of students.</li>
-            <li>Upgraded the puppet show experience by writing a moral-based story and providing studio-level artefacts.</li>
-            <li>Created display charts highlighting the NGO's strengths for social media circulation.</li>
-            <li>Researched and arranged the play therapy room for children visiting the NGO.</li>
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Social Impact</span><span class="tag-sm">NGO</span><span class="tag-sm">Filmmaking</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-entry">
-        <div class="exp-period">2017 (40 hours)</div>
-        <div class="exp-details">
-          <div class="exp-title">Intern</div>
-          <div class="exp-company">Institute for Exceptional Children</div>
-          <ul class="exp-bullets">
-            <li>Created display charts highlighting the NGO's strengths for social media.</li>
-            <li>Researched and arranged the play therapy room for children visiting the NGO.</li>
-          </ul>
-          <div class="exp-pills">
-            <span class="tag-sm">Social Impact</span><span class="tag-sm">NGO</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="edu-section">
-  <div class="edu-label"><span class="section-label">Education</span></div>
-  <div class="edu-body">
-    <div class="edu-entry">
-      <div class="edu-year">2017 — 2021</div>
-      <div>
-        <div class="edu-degree">B.Des. Humanising Technology</div>
-        <div class="edu-school">School of Design, NMIMS Mumbai</div>
-        <div class="edu-grade">CGPA 3.61 / 4.0</div>
-      </div>
-    </div>
-    <div class="edu-entry">
-      <div class="edu-year">2017</div>
-      <div>
-        <div class="edu-degree">Indian School Certificate — Science</div>
-        <div class="edu-school">Jamnabai Narsee School</div>
-        <div class="edu-grade">74%</div>
-      </div>
-    </div>
-    <div class="edu-entry">
-      <div class="edu-year">2015</div>
-      <div>
-        <div class="edu-degree">ICSE</div>
-        <div class="edu-school">Jamnabai Narsee School</div>
-        <div class="edu-grade">90%</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<div class="about-cta">
-  <div class="about-cta-text">Interested in working<br>together? <em>Let's talk.</em></div>
-  <a href="contact.html" class="btn-white">Get in touch <span class="btn-arrow">→</span></a>
-</div>
-
-<footer class="site-footer">
-  <span>© 2025 Sehej Pahujaa</span>
-  <div class="site-footer-links">
-    <a href="https://www.behance.net/sehejpahujaa" target="_blank" rel="noopener">Behance</a>
-    <a href="https://www.linkedin.com/in/sehej-pahujaa-a73822161/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="index.html">Work</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</footer>
-</div>
-
-<script>
-(function(){const d=document.getElementById('cDot'),r=document.getElementById('cRing');if(!d||!r)return;let mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;d.style.transform=`translate(${mx-3}px,${my-3}px)`;r.style.transform=`translate(${rx-16}px,${ry-16}px)`;requestAnimationFrame(loop)})();document.querySelectorAll('a,button,.skill-card,.award-card').forEach(el=>{el.addEventListener('mouseenter',()=>{r.style.width='52px';r.style.height='52px';r.style.borderColor='rgba(26,25,22,0.45)'});el.addEventListener('mouseleave',()=>{r.style.width='32px';r.style.height='32px';r.style.borderColor='rgba(26,25,22,0.28)'})})})();
-const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target)}})},{threshold:0.1});
-document.querySelectorAll('.exp-entry').forEach(el=>obs.observe(el));
-(function(){const w=document.querySelector('.page-wrap');if(!w)return;document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(!h||h.startsWith('http')||h.startsWith('mailto')||h.startsWith('#'))return;a.addEventListener('click',e=>{e.preventDefault();w.style.transition='opacity .25s ease,transform .25s ease';w.style.opacity='0';w.style.transform='translateY(-6px)';setTimeout(()=>window.location.href=h,260)})})})();
-
-(function(){
-  var btn=document.getElementById('hamburgerBtn');
-  var menu=document.getElementById('mobileMenu');
-  if(!btn||!menu)return;
-  function close(){menu.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
-  btn.addEventListener('click',function(e){e.stopPropagation();var o=menu.classList.toggle('open');btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',String(o));});
-  document.addEventListener('click',function(e){if(!menu.contains(e.target)&&e.target!==btn)close();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
-  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
-})();
-
-</script>
-</body>
-</html>
+      </section>
