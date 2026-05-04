@@ -44,10 +44,6 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);overflow-x:h
 @media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.nav-back{display:none}}
 
 /* BREADCRUMB */
-.breadcrumb{position:fixed;top:var(--nav-h);left:0;right:0;z-index:99;background:rgba(247,246,243,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,0.07);padding:8px 48px}
-.breadcrumb a{font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text2);text-decoration:none;font-weight:500;transition:color .15s}
-.breadcrumb a:hover{color:var(--text)}
-@media(max-width:768px){.breadcrumb{padding:8px 24px}}
 
 /* HERO */
 .hero{padding:calc(var(--nav-h) + 36px + 56px) 56px 56px;background:var(--navy);border-bottom:1px solid var(--border)}
@@ -136,7 +132,6 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);overflow-x:h
     <li><a href="contact.html">Contact</a></li>
     <li><a href="spurr.html" class="spurr-link">SPURR ✦</a></li>
   </ul>
-  <a href="index.html" class="nav-back">← All projects</a>
   <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -148,10 +143,6 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);overflow-x:h
   <a href="spurr.html">SPURR ✦</a>
 </div>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <a href="index.html">← All projects</a>
-</div>
 
 <!-- HERO -->
 <section class="hero">
