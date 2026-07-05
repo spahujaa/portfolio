@@ -194,6 +194,21 @@ body{font-family:var(--sans);background:var(--cream);color:var(--text);overflow-
   .spurr-footer{padding:32px 24px}
   .gallery-grid{gap:16px}
 }
+
+/* JOURNEY / SPEAKING SECTION */
+.journey{background:var(--yellow);padding:80px 56px;border-bottom:4px solid var(--text)}
+.journey-kicker{font-family:var(--grotesk);font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text);margin-bottom:16px}
+.journey-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;max-width:1200px;margin:0 auto}
+.journey-heading{font-family:var(--grotesk);font-size:clamp(30px,3.8vw,50px);font-weight:700;line-height:1.06;letter-spacing:-1.2px;color:var(--text)}
+.journey-heading em{font-style:normal;background:var(--text);color:var(--yellow);padding:0 10px}
+.journey-text{font-size:15px;line-height:1.9;color:rgba(26,25,22,0.8);margin-top:20px;max-width:480px}
+.journey-right{display:flex;flex-direction:column;gap:28px;align-items:center}
+.journey-art{width:100%;max-width:340px;height:auto}
+.journey-topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.journey-chip{font-family:var(--grotesk);font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--text);border:2px solid var(--text);border-radius:100px;padding:8px 16px;background:transparent}
+.journey-cta{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-family:var(--grotesk);font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--yellow);background:var(--text);text-decoration:none;padding:12px 24px;border-radius:100px;transition:background .18s,transform .18s}
+.journey-cta:hover{background:var(--pink);color:#fff;transform:translateY(-2px)}
+@media(max-width:900px){.journey{padding:56px 24px}.journey-grid{grid-template-columns:1fr;gap:32px}}
 </style>
 </head>
 <body>
@@ -202,7 +217,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--text);overflow-
 <nav class="nav">
   <a href="index.html" class="nav-logo">Sehej Pahujaa</a>
   <ul class="nav-links">
-    <li><a href="index.html">Work</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="spurr.html" class="spurr-link">SPUR ✦</a></li>
@@ -213,7 +228,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--text);overflow-
   </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Work</a>
+  <a href="case-studies.html">Case Studies</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
   <a href="spurr.html" class="spurr-mobile">SPUR ✦</a>
@@ -288,6 +303,54 @@ body{font-family:var(--sans);background:var(--cream);color:var(--text);overflow-
 </section>
 
 <!-- GALLERY SECTION -->
+<!-- JOURNEY / SPEAKING -->
+<section class="journey">
+  <div class="journey-grid">
+    <div>
+      <div class="journey-kicker">&#10038; On the record</div>
+      <h2 class="journey-heading">I talk about the <em>UX journey</em> &mdash; out loud.</h2>
+      <p class="journey-text">Beyond the visuals, SPUR is where I speak about my journey in the UX industry &mdash; the parts nobody puts on a portfolio. Breaking in, getting rejected, getting hired, negotiating, and everything the job descriptions don't tell you. I post about it as I live it.</p>
+      <a href="https://www.instagram.com/spur.bysp" target="_blank" rel="noopener noreferrer" class="journey-cta">Follow the journey &rarr;</a>
+    </div>
+    <div class="journey-right">
+      <svg class="journey-art" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Microphone with speech bubble illustration">
+        <!-- speech bubble -->
+        <g>
+          <rect x="120" y="18" width="150" height="76" rx="16" fill="#FF3F80" stroke="#1A1916" stroke-width="4"/>
+          <path d="M150 92 L142 116 L172 94 Z" fill="#FF3F80" stroke="#1A1916" stroke-width="4" stroke-linejoin="round"/>
+          <text x="195" y="66" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="26" fill="#FFFBF0">the UX life</text>
+        </g>
+        <!-- mic -->
+        <g>
+          <rect x="52" y="52" width="52" height="88" rx="26" fill="#00C8F0" stroke="#1A1916" stroke-width="4"/>
+          <line x1="52" y1="80" x2="104" y2="80" stroke="#1A1916" stroke-width="4"/>
+          <line x1="52" y1="102" x2="104" y2="102" stroke="#1A1916" stroke-width="4"/>
+          <path d="M36 108 a42 42 0 0 0 84 0" fill="none" stroke="#1A1916" stroke-width="5" stroke-linecap="round"/>
+          <line x1="78" y1="150" x2="78" y2="182" stroke="#1A1916" stroke-width="5" stroke-linecap="round"/>
+          <line x1="52" y1="184" x2="104" y2="184" stroke="#1A1916" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <!-- reel / play chip -->
+        <g>
+          <rect x="176" y="140" width="76" height="76" rx="18" fill="#FFFBF0" stroke="#1A1916" stroke-width="4"/>
+          <path d="M204 162 L204 194 L232 178 Z" fill="#FF5A1F" stroke="#1A1916" stroke-width="3.5" stroke-linejoin="round"/>
+        </g>
+        <!-- sparks -->
+        <path d="M148 132 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#1A1916"/>
+        <path d="M270 118 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#1A1916"/>
+        <path d="M30 30 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#1A1916"/>
+      </svg>
+    <div class="journey-topics">
+      <span class="journey-chip">The UX job market</span>
+      <span class="journey-chip">Salaries &amp; negotiation</span>
+      <span class="journey-chip">Getting hired</span>
+      <span class="journey-chip">Design school</span>
+      <span class="journey-chip">Portfolio building</span>
+      <span class="journey-chip">Everyday UX, decoded</span>
+    </div>
+    </div>
+  </div>
+</section>
+
 <section class="gallery-section">
 
   <div class="gallery-header">
@@ -465,18 +528,8 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 
-<!-- INSTAGRAM CTA -->
-<div style="background:var(--cream);padding:24px 56px 48px;text-align:center;border-bottom:4px solid var(--text)">
-  <a href="https://www.instagram.com/spur.bysp" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;gap:10px;font-family:var(--grotesk);font-size:14px;font-weight:700;letter-spacing:0.04em;color:var(--text);text-decoration:none;padding:12px 28px;border:2px solid var(--text);border-radius:100px;transition:background .18s,color .18s;"
-     onmouseover="this.style.background='#FF3F80';this.style.borderColor='#FF3F80';this.style.color='#fff'"
-     onmouseout="this.style.background='transparent';this.style.borderColor='var(--text)';this.style.color='var(--text)'">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-    @spur.bysp
-  </a>
-</div>
-
 <!-- WITTY CARDS -->
+
 <section class="witty">
   <div class="witty-heading">More things I think about instead of sleeping</div>
   <div class="witty-grid">
